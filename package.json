@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "post": "powershell -ExecutionPolicy Bypass -File ./tools/new-post.ps1"
+  }
+}

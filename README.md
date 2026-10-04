@@ -1,11 +1,21 @@
 # Chirpy Starter
 
+## Running Project In Local
+
 ```gem
 bundle exec jekyll serve
 ```
 
+## Creating New Post
+
+```js
+npm run post -- "My New Post Title"
+```
+
 ```gem
 New-Item "_posts/$(Get-Date -Format 'yyyy-MM-dd')-my-new-post.md"
+
+New-Item -ItemType Directory -Path "_posts/HLD/Distributed System" -Force
 ```
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
