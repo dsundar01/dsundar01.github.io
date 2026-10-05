@@ -1,7 +1,7 @@
 ﻿---
 title: "Distributed Systems: Fundamentals, Transactions, and Consensus"
 date: 2026-10-05 11:20:10 +05:30
-categories: [Distributed Systems, System Design]
+categories: [System Design, Distributed Systems]
 tags: [distributed-systems, transactions, consensus, paxos, 2pc, mvcc, cap-theorem, logical-clocks]
 math: true
 mermaid: true
