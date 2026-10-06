@@ -1,7 +1,7 @@
 ﻿---
 title: "PostgreSQL Deep Dive"
 date: 2026-10-05 14:08:18 +05:30
-categories: [BLOG]
+categories: [System Design, Tech]
 tags: []
 ---
 ## PostgreSQL
