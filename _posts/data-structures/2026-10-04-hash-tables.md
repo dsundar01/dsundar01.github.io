@@ -2,7 +2,7 @@
 title: "Hash Tables"
 date: 2026-10-04 21:27:02 +05:30
 categories: [Data Structures, Hash Tables]
-tags: []
+tags: [neetcode]
 ---
 
 ## Valid Sudoku
