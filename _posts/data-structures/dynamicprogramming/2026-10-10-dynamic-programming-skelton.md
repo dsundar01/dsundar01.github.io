@@ -1,7 +1,7 @@
 ﻿---
-title: "Dynamic Programming"
+title: "Dynamic Programming Problems"
 date: 2026-10-10 17:28:30 +05:30
-categories: [Data Structures, Dynaminc Programming]
+categories: [Data Structures, Dynamic Programming]
 tags: [neetcode]
 ---
 
