@@ -5,6 +5,14 @@ categories: [LLD, Design Patterns, Structural]
 tags: []
 ---
 
+## Table of Contents
+
+- [Adapter](#adapter-design-pattern)
+- [Decorator](#decorator-design-pattern)
+- [Proxy](#proxy-pattern)
+- [Bridge](#bridge-pattern-real-purpose)
+- [Facade](#facade-design-pattern)
+
 ## Adapter Design Pattern
 
 >> Composition + interface in adapter
@@ -826,3 +834,158 @@ abstract class Content {
 }
 
 ```
+
+## Facade Design Pattern
+
+Facade reduces **knowledge coupling** and **workflow coupling** between the client and subsystem classes.
+
+## Without Facade
+
+```java
+class Client {
+    void checkout() {
+        InventoryService.checkStock();
+        PaymentService.processPayment();
+        ShippingService.createShipment();
+        NotificationService.sendEmail();
+    }
+}
+```
+
+Problems:
+
+1. Client knows all subsystem classes.
+2. Client knows the exact call sequence.
+3. If business flow changes, every client must change.
+
+For example, tomorrow the workflow becomes:
+
+```text
+Check Stock
+↓
+Apply Discount
+↓
+Payment
+↓
+Fraud Check
+↓
+Shipping
+↓
+Notification
+```
+
+Every client using these services must be modified.
+
+This is the **tight coupling** shown in your image.
+
+---
+
+## With Facade
+
+```java
+class CheckoutFacade {
+
+    void placeOrder() {
+        inventory.checkStock();
+        discount.apply();
+        payment.process();
+        fraud.check();
+        shipping.createShipment();
+        notification.sendEmail();
+    }
+}
+```
+
+Client:
+
+```java
+class Client {
+    void checkout() {
+        checkoutFacade.placeOrder();
+    }
+}
+```
+
+Now the client depends only on:
+
+```java
+CheckoutFacade
+```
+
+instead of:
+
+```java
+InventoryService
+PaymentService
+ShippingService
+NotificationService
+FraudService
+DiscountService
+...
+```
+
+---
+
+## How Coupling Is Reduced
+
+### Before
+
+```text
+Client
+ ├── InventoryService
+ ├── PaymentService
+ ├── ShippingService
+ └── NotificationService
+```
+
+If any service changes:
+
+```java
+processPayment()
+```
+
+↓
+
+```java
+makePayment()
+```
+
+Client breaks.
+
+---
+
+### After
+
+```text
+Client
+   │
+   ▼
+CheckoutFacade
+   │
+   ├── InventoryService
+   ├── PaymentService
+   ├── ShippingService
+   └── NotificationService
+```
+
+If subsystem changes:
+
+```java
+processPayment()
+```
+
+↓
+
+```java
+makePayment()
+```
+
+Only **CheckoutFacade** changes.
+
+Client remains untouched.
+
+---
+
+## One-Line Takeaway
+
+**Facade removes tight coupling by making the client depend on a single simplified interface instead of depending directly on many subsystem classes and their internal workflow.**
