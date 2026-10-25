@@ -1,0 +1,16 @@
+2 pointer - sorted/ axis parallel
+slow and fast pointer - 30kmph/60kmph
+right expands and left shrinks r++ l++
+with data structure
+interval - sort and 2 pointer
+line sweep - hashmap and event variable
+prefix sum - store subarray sum in hashmap and total sum (0,i)
+greedy - sorting, heaps, traverse left, right, keep minmax
+hashmap - can be used with almost any data structure
+binary search - lb >=, ub >, bs on value
+matrix - think in terms of transformation how row and col going to move
+linked list
+delete -> head.next = head.next.next
+ddl insert -> 4 pointer change
+ddl delete -> ignore and map next and prev others
+.

@@ -1,7 +1,7 @@
 ﻿---
 title: "LinkedList Basics"
 date: 2026-10-06 14:35:34 +05:30
-categories: [Data Structures, Linked List]
+categories: [Data Structures, NeetCode]
 tags: [neetcode]
 ---
 

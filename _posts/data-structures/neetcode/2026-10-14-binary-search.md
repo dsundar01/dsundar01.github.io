@@ -1,7 +1,7 @@
 ﻿---
 title: "Binary Search"
 date: 2026-10-14 15:51:10 +05:30
-categories: [Data Structures, Binary Search]
+categories: [Data Structures, NeetCode]
 tags: [neetcode]
 ---
 

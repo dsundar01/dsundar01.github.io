@@ -1,0 +1,33 @@
+Java
+Design Pattern
+Streams
+React JS
+
+Java 8 features, oops, exception , collection, spring ioc, dependency injection, annotations, 
+spring security, devtool, maven project structure.
+
+What is Bean, what are the bean scopes and which is the default
+difference between == vs .equals()
+
+What are the most used design patterns, 
+How do you avoid having a Cross origin exception between your front end app and your back end
+1. What is the difference between class and interface 2. What is a LinkedList 3. Tell me about your previous projects.
+ 4. What is Autowiring 5. What are the new features of HTML5
+
+ Basic of core Core Java Spring-boot core annotation-based questions Concurrency Multi-threading Angular
+
+ All the Basic Java Core Concepts , 
+ More weightage on HashMaps and their working.
+
+ ----------------
+ Java, Spring, React Common Interview questions
+
+1. revise all short notes 
+2. stream practice
+if time permits: isolation level, gc, java latest features
+now: 10:30
+inteview : 5:30
+
+-> java is vast, let me complete spring boot, react js, js 1st
+-> then start java
+
